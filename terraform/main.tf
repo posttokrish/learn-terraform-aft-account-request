@@ -2,14 +2,13 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "<ACCOUNT EMAIL>"
-    AccountName               = "sandbox-aft"
-    ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "<SSO EMAIL>"
-    SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
+    AccountEmail = "example+hkrigana@amazon.com"
+    AccountName  = "example-account"
+    ManagedOrganizationalUnit = "gss-Sandbox"
+    SSOUserEmail     = "admin+hkrigana@amazon.com"
+    SSOUserFirstName = "Krishna"
+    SSOUserLastName  = "GGGG"
   }
-
   account_tags = {
     "Learn Tutorial" = "AFT"
   }
