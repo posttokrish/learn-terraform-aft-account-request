@@ -76,3 +76,30 @@ module "sandbox4" {
 
   account_customizations_name = "SANDBOX"
 }
+module "sandbox5" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail = "example5+hkrigana@amazon.com"
+    AccountName  = "example5-account"
+    ManagedOrganizationalUnit = "gss-Sandbox"
+    SSOUserEmail     = "admin5+hkrigana@amazon.com"
+    SSOUserFirstName = "Krishna4"
+    SSOUserLastName  = "GGGG5"
+  }
+  account_tags = {
+    "Learn Tutorial" = "AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "HashiCorp Learn"
+    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
+  }
+
+  custom_fields = {
+    group = "non-prod"
+  }
+
+  account_customizations_name = "SANDBOX"
+}
+
