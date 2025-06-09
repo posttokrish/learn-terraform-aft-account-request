@@ -102,12 +102,12 @@ module "sandbox5" {
 
   account_customizations_name = "SANDBOX"
 }
-module "sandbox5" {
+module "sandbox-6" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail = "example2+hkrigana@amazon.com"
-    AccountName  = "example2-account"
+    AccountEmail = "example6+hkrigana@amazon.com"
+    AccountName  = "example6-account"
     ManagedOrganizationalUnit = "gss-Sandbox"
     SSOUserEmail     = "admin2+hkrigana@amazon.com"
     SSOUserFirstName = "Krishna2"
